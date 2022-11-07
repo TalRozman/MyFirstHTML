@@ -10,13 +10,11 @@
             body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
-            background-color:floralwhite;
             }
 
             .topnav {
             overflow: hidden;
             background-color: rgb(170, 170, 170);
-            width: 100%;
             }
 
             .topnav a {
@@ -43,7 +41,7 @@
             display: none;
             }
 
-            @media screen and (max-width: 800px) {
+            @media screen and (max-width: 600px) {
             .topnav a:not(:first-child) {display: none;}
             .topnav a.icon {
                 float: right;
@@ -98,5 +96,15 @@
             <button type="reset">נקה טופס</button>
             <button type="submit">שלח טופס</button>
         </form>
+    <script>
+        function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+        }
+    </script>
 </body>
 </html>
