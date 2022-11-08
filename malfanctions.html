@@ -74,7 +74,8 @@
         <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="Pics/hamburger.png" width="20px"></a>
     </div>
     <h1 style="text-align: center;">טופס דיווח על תקלות בבניין</h1>
-        <form dir="rtl" style="text-align: center;width: 100%;">
+    <div dir="rtl" style="text-align: center;width: 100%;">
+        <form id="malfunctions" autocomplete="off">
             <label for="Fname">שם פרטי:</label>
             <input type="text" id="Fname" placeholder="שם פרטי" width="100%"><br><br>
             
@@ -92,10 +93,10 @@
 
             <label for="pic">העלאת תמונה:</label>
             <input type="file" id="pic" accept="image/*" placeholder="" width="100%"><br><br>
-
-            <button type="reset">נקה טופס</button>
-            <button type="submit">שלח טופס</button>
         </form>
+        <button type="reset" form="malfunctions">נקה טופס</button>
+        <button type="submit" form="malfunctions" value="שלח טופס" onclick="alert('הטופס נשלח בהצלחה')">שלח טופס</button>
+    </div>
     <script>
         function myFunction() {
         var x = document.getElementById("myTopnav");
